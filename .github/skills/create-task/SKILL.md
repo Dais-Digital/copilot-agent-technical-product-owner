@@ -32,7 +32,8 @@ If a parent work item ID is required but absent, ask the user for it. Do not inf
 3. Research each referenced GitHub or Azure DevOps repository to establish the affected components, paths, dependencies, tests, configuration, documentation, and operational work.
 4. Use the parent work item, when provided, for scope and dependency context. Check sibling child items when available to avoid duplicate or overlapping tasks.
 5. If the task may involve a code change and no repository is supplied or identifiable from the parent context, ask the user for the relevant repository or repositories.
-6. Do not invent repository impacts, Priority, Activity, Original Estimate, or Remaining Work. Ask the user for values that cannot be established from supplied information or approved conventions.
+6. Do not invent repository impacts, Priority, or Activity. Ask the user for values that cannot be established from supplied information or approved conventions.
+7. Estimate `Original Estimate` and `Remaining Work` according to the applicable workspace instruction; do not ask the user for these values.
 
 ## Task Fields
 
@@ -47,6 +48,8 @@ Prepare all required fields for every task:
 - Remaining Work
 
 Format `Description` according to the applicable workspace instruction: `What`, `Why`, `How`, then `Threat Model`. The `How` section must identify each affected repository and required work in it.
+
+Estimate `Original Estimate` and `Remaining Work` according to the applicable workspace instruction.
 
 Preserve task ordering in the title. Use the numeric prefix as supplied; do not use the Azure DevOps task hierarchy or identifier as a substitute for the requested ordering.
 
