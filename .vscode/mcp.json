@@ -10,16 +10,27 @@
       "args": [
         "-y",
         "@azure-devops/mcp",
-        "${input:azure-devops-organization-url}"
-      ]
+        "${input:azure-devops-organization-url}",
+        "--authentication",
+        "envvar"
+      ],
+      "env": {
+        "ADO_MCP_AUTH_TOKEN": "${input:azure-devops-pat}"
+      }
     }
   },
   "inputs": [
     {
       "id": "azure-devops-organization-url",
       "type": "promptString",
-      "description": "Azure DevOps organization URL",
+      "description": "Azure DevOps organization name (e.g. 'contoso', not the full URL)",
       "password": false
+    },
+    {
+      "id": "azure-devops-pat",
+      "type": "promptString",
+      "description": "Azure DevOps Personal Access Token",
+      "password": true
     }
   ]
 }

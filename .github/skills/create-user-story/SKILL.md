@@ -54,7 +54,7 @@ Format `Description` according to the applicable workspace instruction: `What`, 
 
 Format `Acceptance Criteria` according to the applicable workspace instruction as a bulleted list of observable, testable outcomes.
 
-Do not invent Story Points, Risk, Priority, Value Area, links, or repository impacts. Obtain missing values from the user or record them as unresolved before review.
+Estimate `Story Points`, `Risk`, `Priority`, and `Value Area` according to their applicable workspace instructions. Do not invent links or repository impacts. Obtain missing values from the user or record them as unresolved before review when the applicable instruction cannot resolve them.
 
 ## Child Tasks
 
