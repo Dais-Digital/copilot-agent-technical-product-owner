@@ -12,7 +12,7 @@ A workspace-level GitHub Copilot customization for researching scope and creatin
 	Project=<project>; Area Path=<area>; Iteration Path=<iteration>
 	```
 
-The command stores the values in `.github/config/project-defaults.md`. This file is ignored by Git so each user can keep their own Azure DevOps defaults without committing them.
+The command creates `.github/config/project-defaults.md` from `.github/config/project-defaults.example.md` when needed, then stores the values in the local defaults file. The local file is ignored by Git so each user can keep their own Azure DevOps defaults without committing them.
 
 ## Create Work Items
 
