@@ -1,0 +1,25 @@
+{
+  "servers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "azure-devops": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@azure-devops/mcp",
+        "${input:azure-devops-organization-url}"
+      ]
+    }
+  },
+  "inputs": [
+    {
+      "id": "azure-devops-organization-url",
+      "type": "promptString",
+      "description": "Azure DevOps organization URL",
+      "password": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "windows": "pwsh -NoProfile -File .github/hooks/validate-work-item-creation.ps1",
+        "timeout": 15
+      }
+    ]
+  }
+}
